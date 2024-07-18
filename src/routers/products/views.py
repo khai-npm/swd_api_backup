@@ -17,3 +17,6 @@ async def do_update_product_price(id : int, new_price : float):
         print(str(e))
         return {"success" : False, 
                 "error" : str(e)}
+    
+
+

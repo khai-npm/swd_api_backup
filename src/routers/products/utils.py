@@ -1,6 +1,7 @@
 from typing import List
 from src.database.get_db_instance import cursor as db
 from src.models.product import ProductModel
+from src.models.order import orderModel
 import pyodbc
 
 
@@ -30,6 +31,7 @@ def update_product_price(id, new_price):
 
     db.execute('UPDATE product SET Price = ? WHERE Id = ?', [new_price, id])
     db.commit()
+
 
 
 
