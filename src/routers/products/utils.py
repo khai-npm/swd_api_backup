@@ -30,7 +30,6 @@ def update_product_price(id, new_price):
 
     db.execute('UPDATE product SET Price = ? WHERE Id = ?', [new_price, id])
     db.commit()
-    db.close()
 
 
 
